@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+<head>
+  <style>
+    body {
+      width: 400px;  /* 初始宽度 */
+      height: 500px; /* 初始高度 */
+      min-width: 300px;
+      min-height: 300px;
+      margin: 0;
+      padding: 10px;
+      overflow: auto;
+      resize: both; /* 允许调整大小 */
+    }
+    #chat {
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    #input-container {
+      display: flex;
+      gap: 10px;
+    }
+    #input {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat"></div>
+  <div id="input-container">
+    <input id="input" type="text" placeholder="输入消息...">
+    <button id="send">发送</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

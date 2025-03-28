@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Chat",
+  "version": "0.0.1",
+  "description": "与DeepSeek AI对话的Chrome扩展",
+  "permissions": [
+    "storage",  
+    "activeTab" 
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_title": "DeepSeek Chat - 可调整大小"
+  },
+  "options_page": "options.html" 
+}
