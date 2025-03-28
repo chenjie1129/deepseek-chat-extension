@@ -30,7 +30,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
           },
           body: JSON.stringify({
             model: "deepseek-chat",
-            messages: [{role: "user", content: request.message}]
+            messages: [{role: "user", content: request.message}],
+            return_reasoning: true  // 请求API返回推理过程
           })
         });
 
