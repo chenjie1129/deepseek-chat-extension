@@ -15,4 +15,4 @@
 ### 开发模式
 1. 克隆本仓库
    ```bash
-   git clone https://github.com/你的用户名/deepseek-chat.git
+   git clone https://github.com/chenjie1129/deepseek-chat.git
